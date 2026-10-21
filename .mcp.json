@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-partner-member-directory-extractor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-partner-member-directory-extractor"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-partner-member-directory-extractor",
+  "version": "1.0.0",
+  "description": "MCP server for Partner and Member Directory Extractor. Turn a vendor partner directory (PartnerPage, Shopify Partner Directory) or a trade body member list into one company row per listing with website, domain, tier, tags, and location. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-partner-member-directory-extractor": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "partner-directory",
+    "member-directory",
+    "lead-generation",
+    "list-building",
+    "b2b",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/partner-member-directory-extractor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-partner-member-directory-extractor"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-partner-member-directory-extractor"
+}
